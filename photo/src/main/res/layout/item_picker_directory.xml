@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_64">
+
+    <!--封面图片-->
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/directory_cover_iv"
+        android:layout_width="@dimen/space_56"
+        android:layout_height="@dimen/space_56"
+        android:layout_marginLeft="@dimen/app_common_margin_left_normal"
+        android:layout_marginRight="@dimen/space_8" />
+
+    <!--文件夹名-->
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/directory_name_tv"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_toRightOf="@+id/directory_cover_iv"
+        android:layout_toLeftOf="@+id/right_arrow"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--右箭头-->
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/app_common_margin_left_normal"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/common_bt_open_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!--底部分割线-->
+    <View
+        android:background="@drawable/common_divider_line_horizontal_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/app_common_margin_left_normal"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/space_32"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/assignment_reply_play_voice_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/assignment_reply_bt_voice_play_selector"
+        android:paddingLeft="@dimen/space_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/assignment_reply_voice_anim_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voice_play_ani"/>
+
+        <TextView
+            android:id="@+id/assignment_reply_voice_duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_16"
+            android:text="16'"
+            android:textColor="@color/app_main_color"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/assignment_reply_delete_voice_ib"
+        android:layout_width="@dimen/space_32"
+        android:layout_height="match_parent"
+        android:background="@drawable/assignment_reply_bt_voice_delete_selector"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--公共颜色-->
+    <color name="guide_text_green">#7fb268</color>
+    <color name="app_main_color">#4cbd71</color>    <!--主色调，可点击按钮文字颜色-->
+    <color name="app_main_color_pressed">#804cbd71</color>
+    <color name="app_main_color_disabled">#4d4cbd71</color>
+    <color name="app_caution_color">#ff6815</color>     <!--提示警示色，未读数字背景色，警示性文字颜色-->
+    <color name="app_support_color">#ff9600</color>     <!--辅助色，可点击文字按钮颜色-->
+    <color name="app_support_color_pressed">#80ff9600</color>  <!--按压的颜色50%-->
+    <color name="app_disable_color">#cccccc</color>     <!--不可用色，按钮不可用状态/白色输入框暗文文字颜色-->
+    <color name="app_support_txt_color">#666666</color> <!--辅助文字颜色-->
+    <color name="app_support_txt_color_pressed">#80666666</color>   <!--按压的颜色50%-->
+    <color name="app_comment_color">#999999</color>     <!--注释性文字用色-->
+    <color name="app_comment_color_pressed">#80999999</color>     <!--注释性文字用色-->
+    <color name="app_main_txt_color">#333333</color>    <!--主要文字颜色-->
+    <color name="app_list_bg_color">#eeeeee</color>     <!--多组列表深色背景色（通知作业设置等）-->
+    <color name="app_divider_color">#e7e7e7</color>     <!--分隔线颜色-->
+    <color name="app_input_deep_color">#f8f8f8</color>  <!--深色输入框/开放性tab背景颜色-->
+    <color name="app_divider_deep_bg_color">#dadbdd</color>    <!--深色背景上的分割线颜色-->
+    <color name="app_title_bg_color">#E6f5f5f5</color>
+    <color name="app_gray_btn_color">#f6f6f6</color>     <!--灰色按钮的颜色-->
+
+    <!--波纹效果-->
+    <color name="ripple_color">#9ccc</color>
+
+    <color name="app_status_bg_color_below_M">#cccccc</color>
+    <color name="app_status_bg_color">#f5f5f5</color>   <!--状态栏颜色-->
+
+
+    <color name="app_gray_black_txt">#9da49f</color><!--浮层 不透明度-->
+    <color name="transparent_half">#b0000000</color>
+    <color name="white">#ffffff</color>
+    <color name="tab_txt_sel_color">#4cbd71</color>
+    <color name="app_black_txt">#404743</color>
+</resources>

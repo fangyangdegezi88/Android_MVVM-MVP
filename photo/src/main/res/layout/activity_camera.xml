@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.focustech.android.photo.camera.CameraSurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"
+        android:background="@android:color/black">
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/camera_shoot_bg" />
+
+        <TextView
+            android:id="@+id/take_photo_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:gravity="center"
+            android:text="@string/profile_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/take_photo_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@android:color/black"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/take_photo_retry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:text="@string/pic_retry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/take_photo_finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:text="@string/pic_finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

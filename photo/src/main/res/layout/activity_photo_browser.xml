@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <com.focustech.android.commonuis.view.overscroll.ViewPagerFixed
+        android:id="@+id/photo_vpf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_30">
+
+        <TextView
+            android:id="@+id/tv_raw_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_white_border_4dp_radius"
+            android:padding="@dimen/space_5"
+            android:text="@string/raw_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_support"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/index_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_raw_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:text="1/3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_support"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/download_photo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_raw_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:background="@drawable/download_bt_selector"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

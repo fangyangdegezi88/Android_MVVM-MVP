@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.focustech.android.commonuis.view.header.SFActionBar
+        android:id="@+id/sf_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_common_item_height"/>
+
+    <com.focustech.android.commonuis.view.overscroll.ViewPagerFixed
+        android:layout_below="@id/sf_header"
+        android:layout_above="@+id/bottom_toolbar_rl"
+        android:id="@+id/local_photo_vpf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--底部工具栏-->
+    <RelativeLayout
+        android:id="@+id/bottom_toolbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_common_menu_height"
+        android:background="@color/app_title_bg_color"
+        android:layout_alignParentBottom="true">
+
+        <!--分割线-->
+        <View
+            android:background="@color/app_divider_deep_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/local_photo_format"
+            android:textColor="@color/app_main_txt_color"
+            android:textSize="@dimen/space_16"
+            />
+    </RelativeLayout>
+</RelativeLayout>

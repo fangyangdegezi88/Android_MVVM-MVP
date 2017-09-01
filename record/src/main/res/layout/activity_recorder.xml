@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootLayout"
+    android:background="@color/white">
+    <!--振幅及时长显示-->
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_marginTop="@dimen/space_45"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_16">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/audio_length_container"
+            android:layout_width="@dimen/space_32"
+            android:layout_height="@dimen/space_14"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_toLeftOf="@id/audio_length_container"
+            android:layout_marginRight="@dimen/space_6"
+            android:id="@+id/left_wave_container"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/audio_length_container"
+            android:layout_marginLeft="@dimen/space_6"
+            android:id="@+id/right_wave_container"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--停止按钮-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/stop_recorder_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <!--倒计时-->
+    <TextView
+        android:id="@+id/remaining_time_tv"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:gravity="center"
+        android:textSize="@dimen/space_16"/>
+
+</LinearLayout>

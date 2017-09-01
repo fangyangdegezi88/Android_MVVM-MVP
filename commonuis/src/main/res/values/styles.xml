@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SFAlertDialog对话框风格style-->
+    <style name="SFDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/AlertAnim</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/alert_dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--SFAlertDialog对话框弹出动画-->
+    <style name="AlertAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!--SFAlertDialog  进度PorgressBar style-->
+    <style name="setting_clean_cache_progressbar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:progressDrawable">@drawable/setting_clear_progressbar_bg</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+    </style>
+
+    <!--首页欢迎页-->
+    <style name="welcomeDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AlertAnim</item>
+    </style>
+
+    <!--SFProgressDialog 加载对话框 PorgressBar style-->
+    <style name="DefineprogressBarStyleSmall" parent="android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+
+    <!-- 底部弹出选择对话框style-->
+    <style name="FilterDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent_half</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/bottomUpStyle</item>
+    </style>
+
+    <!-- 底部弹出选择对话框动画-->
+    <style name="bottomUpStyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit_to_bottom</item>
+    </style>
+
+    <!--SFProgressDialog 加载对话框 style-->
+    <style name="MTDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

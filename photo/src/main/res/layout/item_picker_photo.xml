@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.focustech.android.photo.view.SquareItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/video_sign_iv"
+        android:layout_width="@dimen/space_24"
+        android:layout_height="@dimen/space_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginBottom="@dimen/space_4"
+        android:src="@drawable/album_icon_video"/>
+
+    <ImageView
+        android:id="@+id/supernatant_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/no_opacity_20"/>
+
+
+    <LinearLayout
+        android:id="@+id/photo_checkbox_delegate_ll"
+        android:layout_width="@dimen/space_24"
+        android:layout_height="@dimen/space_24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/photo_checkbox_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/common_photo_checkbox_selector"
+            />
+    </LinearLayout>
+
+</com.focustech.android.photo.view.SquareItemLayout>

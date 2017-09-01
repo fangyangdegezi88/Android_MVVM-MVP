@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solid 填充颜色 -->
+    <solid
+        android:color="@color/no_opacity_50" />
+
+    <!-- corners 圆角度数 -->
+    <corners android:radius="8px" />
+
+    <!-- stroke 线框 -->
+    <stroke android:color="@color/white"
+        android:width="1px"/>
+
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--公共绿色按钮 radius=8px-->
+    <item android:drawable="@drawable/green_btn_small_normal" android:state_pressed="false" android:state_enabled="true"/>
+    <item android:drawable="@drawable/green_btn_small_pressed" android:state_pressed="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/green_btn_small_disabled" android:state_enabled="false"/>
+</selector>

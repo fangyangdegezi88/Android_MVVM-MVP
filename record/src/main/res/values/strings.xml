@@ -1,0 +1,17 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Record</string>
+
+    <!--录音模块-->
+    <string name="module_recorder">录音模块</string>
+    <string name="insert_sd_card">请插入SD卡</string>
+    <string name="storage_is_full">您的内存空间已满</string>
+    <string name="max_length_reached">录音时间超长</string>
+    <string name="error_sdcard_access">存储空间不足</string>
+    <string name="error_app_internal">内部错误</string>
+    <string name="recorder_remaining_time" formatted="false">录音时间还剩%ds</string>
+    <string name="please_give_authority_to_record_audio">%s需要使用录音功能，请您先完成本机授权。</string>
+    <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
+    <string name="timer_format"><xliff:g id="format">%d</xliff:g>:<xliff:g id="format">%02d</xliff:g></string>
+    <string name="sample_time">0:00</string>
+    <string name="voice_file_not_exist">音频不存在，请重新录制</string>
+</resources>

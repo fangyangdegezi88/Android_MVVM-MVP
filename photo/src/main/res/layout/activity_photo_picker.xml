@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.focustech.android.commonuis.view.header.SFActionBar
+        android:id="@+id/sf_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_common_item_height"/>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sf_header"
+        />
+
+    <!--底部工具栏-->
+    <RelativeLayout
+        android:id="@+id/bottom_toolbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/app_common_menu_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_title_bg_color">
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_divider_deep_bg_color"/>
+
+        <Button
+            android:id="@+id/preview_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/space_64"
+            android:layout_height="@dimen/space_32"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:background="@drawable/gray_btn_small_selector"
+            android:enabled="false"
+            android:text="@string/preview"
+            android:textColor="@drawable/app_gray_btn_text_color_selector"
+            android:textSize="@dimen/space_16"
+            />
+
+        <Button
+            android:id="@+id/commit_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/space_88"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/space_32"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:background="@drawable/green_btn_small_selector"
+            android:enabled="false"
+            android:text="@string/make_sure_format"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_16"
+            />
+
+        <!--上传的云盘路径，根据开关显示-->
+        <LinearLayout
+            android:id="@+id/upload_folder_name_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:layout_toLeftOf="@id/commit_btn"
+            android:layout_toRightOf="@id/preview_btn"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/album_icon_folder"/>
+
+            <TextView
+                android:id="@+id/upload_folder_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_4"
+                android:layout_marginRight="@dimen/space_4"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="我的云盘"
+                android:textColor="@color/app_support_txt_color"
+                android:textSize="@dimen/text_size_11"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

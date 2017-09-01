@@ -1,0 +1,198 @@
+<resources>
+
+    <!--应用公共大小-->
+    <dimen name="app_common_title_height">44dp</dimen>  <!--标题栏高度-->
+    <dimen name="app_common_menu_height">49dp</dimen>   <!--菜单栏高度-->
+
+    <dimen name="app_common_toolbar_height">44dp</dimen>
+    <dimen name="app_common_item_height">44dp</dimen>
+    <dimen name="app_common_btn_height">44dp</dimen>
+    <dimen name="app_common_margin_left_normal">15dp</dimen>
+    <dimen name="app_common_margin_left_small">10dp</dimen>
+    <dimen name="app_common_margin_right_normal">15dp</dimen>
+    <dimen name="app_common_margin_right_small">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">15dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+
+    <!-- tab -->
+    <dimen name="tab_text_size">10dp</dimen>
+    <dimen name="tab_image_w">32dp</dimen>
+    <dimen name="tab_image_h">28dp</dimen>
+
+    <!--action bar -->
+    <dimen name="action_text_size">18dp</dimen>
+
+    <!--divider-->
+    <dimen name="divider_height">1px</dimen>    <!--分隔线-->
+
+    <!--CropImageView-->
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="target_radius">24dp</dimen> <!--例如：若手指按下坐标x，y距离边界left,top的距离在此数值内，则认为是CornerHandle事件-->
+    <dimen name="snap_radius">3dp</dimen>    <!---->
+    <dimen name="corner_length">20dp</dimen>
+
+    <!--公共图标大小-->
+    <dimen name="common_icon_128x128">64dp</dimen>    <!--大号编辑图标宽高-->
+    <dimen name="common_icon_48x48">24dp</dimen>      <!--菜单栏图标、“我”图标、中号编辑图标-->
+    <dimen name="common_icon_40x40">20dp</dimen>      <!--导航栏图标-->
+    <dimen name="common_icon_32x32">16dp</dimen>      <!--公共控件(大)-->
+    <dimen name="common_icon_24x24">12dp</dimen>      <!--公共控件(大)-->
+
+    <!--公共距离和字体大小-->
+
+    <!-- 文字大小 -->
+    <dimen name="app_detail_title">18dp</dimen>     <!--详情大标题-->
+    <dimen name="app_list_title">17dp</dimen>       <!--列表大标题/导航栏标题-->
+    <dimen name="app_content_and_form">16dp</dimen> <!--内容文字，表单文字-->
+    <dimen name="app_support">14dp</dimen>          <!--辅助文字-->
+    <dimen name="app_comment_menu">11dp</dimen>     <!--注释性文字/菜单栏文字-->
+
+    <dimen name="text_size_32">32dp</dimen>
+    <dimen name="text_size_31">31dp</dimen>
+    <dimen name="text_size_30">30dp</dimen>
+    <dimen name="text_size_29">29dp</dimen>
+    <dimen name="text_size_28">28dp</dimen>
+    <dimen name="text_size_27">27dp</dimen>
+    <dimen name="text_size_26">26dp</dimen>
+    <dimen name="text_size_25">25dp</dimen>
+    <dimen name="text_size_24">24dp</dimen>
+    <dimen name="text_size_23">23dp</dimen>
+    <dimen name="text_size_22">22dp</dimen>
+    <dimen name="text_size_21">21dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_19">19dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="text_size_17">17dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_9">9dp</dimen>
+    <dimen name="text_size_8">8dp</dimen>
+    <dimen name="text_size_7">7dp</dimen>
+    <dimen name="text_size_6">6dp</dimen>
+    <dimen name="text_size_5">5dp</dimen>
+    <dimen name="text_size_4">4dp</dimen>
+    <dimen name="text_size_3">3dp</dimen>
+    <dimen name="text_size_2">2dp</dimen>
+    <dimen name="text_size_1">1dp</dimen>
+
+    <!-- 长度大小 -->
+    <dimen name="space_438">438.0dp</dimen>
+    <dimen name="space_367">367.0dp</dimen>
+    <dimen name="space_300">300.0dp</dimen>
+    <dimen name="space_280">280.0dp</dimen>
+    <dimen name="space_250">250.0dp</dimen>
+    <dimen name="space_240">240.0dp</dimen>
+    <dimen name="space_219">219.0dp</dimen>
+    <dimen name="space_212">212.0dp</dimen>
+    <dimen name="space_220">220.0dp</dimen>
+    <dimen name="space_188">188.0dp</dimen>
+    <dimen name="space_180">180.0dp</dimen>
+    <dimen name="space_166">166.0dp</dimen>
+    <dimen name="space_160">160.0dp</dimen>
+    <dimen name="space_153">153.0dp</dimen>
+    <dimen name="space_140">140.0dp</dimen>
+    <dimen name="space_135">135.0dp</dimen>
+    <dimen name="space_130">130.0dp</dimen>
+    <dimen name="space_126">126.0dp</dimen>
+    <dimen name="space_125">125.0dp</dimen>
+    <dimen name="space_123">123.0dp</dimen>
+    <dimen name="space_122">122.0dp</dimen>
+    <dimen name="space_120">120.0dp</dimen>
+    <dimen name="space_118">118.0dp</dimen>
+    <dimen name="space_116">116.0dp</dimen>
+    <dimen name="space_112">112.0dp</dimen>
+    <dimen name="space_109">109.0dp</dimen>
+    <dimen name="space_108">108.0dp</dimen>
+    <dimen name="space_101">101.0dp</dimen>
+    <dimen name="space_100">100.0dp</dimen>
+    <dimen name="space_95">95.0dp</dimen>
+    <dimen name="space_93">93.0dp</dimen>
+    <dimen name="space_90">90.0dp</dimen>
+    <dimen name="space_88">88.0dp</dimen>
+    <dimen name="space_87">87.0dp</dimen>
+    <dimen name="space_85">85.0dp</dimen>
+    <dimen name="space_80">80.0dp</dimen>
+    <dimen name="space_78">78.0dp</dimen>
+    <dimen name="space_76">76.0dp</dimen>
+    <dimen name="space_73">73.0dp</dimen>
+    <dimen name="space_72">72.0dp</dimen>
+    <dimen name="space_69">69.0dp</dimen>
+    <dimen name="space_68">68.0dp</dimen>
+    <dimen name="space_67">67.0dp</dimen>
+    <dimen name="space_66">66.0dp</dimen>
+    <dimen name="space_65">65.0dp</dimen>
+    <dimen name="space_64">64.0dp</dimen>
+    <dimen name="space_63">63.0dp</dimen>
+    <dimen name="space_62">62.0dp</dimen>
+    <dimen name="space_61">61.0dp</dimen>
+    <dimen name="space_60">60.0dp</dimen>
+    <dimen name="space_59">59.0dp</dimen>
+    <dimen name="space_58">58.0dp</dimen>
+    <dimen name="space_57">57.0dp</dimen>
+    <dimen name="space_56">56.0dp</dimen>
+    <dimen name="space_55">55.0dp</dimen>
+    <dimen name="space_54">54.0dp</dimen>
+    <dimen name="space_53">53.0dp</dimen>
+    <dimen name="space_52">52.0dp</dimen>
+    <dimen name="space_51">51.0dp</dimen>
+    <dimen name="space_50">50.0dp</dimen>
+    <dimen name="space_49">49.0dp</dimen>
+    <dimen name="space_48">48.0dp</dimen>
+    <dimen name="space_47">47.0dp</dimen>
+    <dimen name="space_46">46.0dp</dimen>
+    <dimen name="space_45">45.0dp</dimen>
+    <dimen name="space_44">44.0dp</dimen>
+    <dimen name="space_43">43.0dp</dimen>
+    <dimen name="space_42">42.0dp</dimen>
+    <dimen name="space_41">41.0dp</dimen>
+    <dimen name="space_40">40.0dp</dimen>
+    <dimen name="space_39">39.0dp</dimen>
+    <dimen name="space_38">38.0dp</dimen>
+    <dimen name="space_37">37.0dp</dimen>
+    <dimen name="space_36">36.0dp</dimen>
+    <dimen name="space_35">35.0dp</dimen>
+    <dimen name="space_34">34.0dp</dimen>
+    <dimen name="space_33">33.0dp</dimen>
+    <dimen name="space_32">32.0dp</dimen>
+    <dimen name="space_31">31.0dp</dimen>
+    <dimen name="space_30">30.0dp</dimen>
+    <dimen name="space_29">29.0dp</dimen>
+    <dimen name="space_28">28.0dp</dimen>
+    <dimen name="space_27">27.0dp</dimen>
+    <dimen name="space_26">26.0dp</dimen>
+    <dimen name="space_25">25.0dp</dimen>
+    <dimen name="space_24">24.0dp</dimen>
+    <dimen name="space_23">23.0dp</dimen>
+    <dimen name="space_22">22.0dp</dimen>
+    <dimen name="space_21">21.0dp</dimen>
+    <dimen name="space_20">20.0dp</dimen>
+    <dimen name="space_19">19.0dp</dimen>
+    <dimen name="space_18">18.0dp</dimen>
+    <dimen name="space_17">17.0dp</dimen>
+    <dimen name="space_16">16.0dp</dimen>
+    <dimen name="space_15">15.0dp</dimen>
+    <dimen name="space_14">14.0dp</dimen>
+    <dimen name="space_13">13.0dp</dimen>
+    <dimen name="space_12">12.0dp</dimen>
+    <dimen name="space_11">11.0dp</dimen>
+    <dimen name="space_10">10.0dp</dimen>
+    <dimen name="space_9">9.0dp</dimen>
+    <dimen name="space_8">8.0dp</dimen>
+    <dimen name="space_7">7.0dp</dimen>
+    <dimen name="space_6">6.0dp</dimen>
+    <dimen name="space_5">5.0dp</dimen>
+    <dimen name="space_4">4.0dp</dimen>
+    <dimen name="space_3">3.0dp</dimen>
+    <dimen name="space_2">2.0dp</dimen>
+    <dimen name="space_1">1.0dp</dimen>
+</resources>

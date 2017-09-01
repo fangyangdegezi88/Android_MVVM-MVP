@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.focustech.android.components.mt.sdk">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application>
+        <service
+            android:name="com.focustech.android.components.mt.sdk.android.service.MTCoreService"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="mt.service.core.boot" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".android.service.keepalive.MTEventReceiver">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.Receiver1"
+            android:process=":core" />
+
+        <service
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.Service2"
+            android:process=":process2" />
+        <receiver
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.Receiver2"
+            android:process=":process2" />
+        <!-- 进程保活开始-->
+        <service
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.CancelService"
+            android:process=":core"></service>
+        <service
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.ProtectService"
+            android:process=":protect"></service>
+        <!-- 进程保活结束-->
+        <service
+            android:name="com.focustech.android.components.mt.sdk.android.service.keepalive.MTJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+</manifest>

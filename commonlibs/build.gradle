@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.greendao_generator
+    compile rootProject.ext.greendao
+    compile rootProject.ext.disk_lrucache
+    compile rootProject.ext.fastjson
+    compile rootProject.ext.analytics
+    compile rootProject.ext.glide
+    compile rootProject.ext.multidex
+    compile rootProject.ext.logback_core
+    compile rootProject.ext.logback_classic
+    compile rootProject.ext.slf4j
+    compile rootProject.ext.okhttp
+    compile rootProject.ext.eventbus
+    compile rootProject.ext.appcompat_v7
+}
+apply from: 'publish-lib.gradle'

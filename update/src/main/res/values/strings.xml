@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Update</string>
+
+    <!--升级-->
+    <string name="upgrade">升级</string>
+    <string name="upgrade_already_new">已是最新版本</string>
+    <string name="upgrade_find_new_app">发现新版本，点击下载安装</string>
+    <string name="upgrade_download_title">新版本下载</string>
+    <string name="upgrade_download_alread">新版本已下载，点击安装</string>
+    <string name="upgrade_right_now">立即升级</string>
+    <string name="upgrade_put_off">稍后再说</string>
+    <string name="upgrade_no_sdcard">当前设备无SD卡，数据无法下载</string>
+    <string name="has_published_new_version">发现新版本</string>
+    <string name="advise_update_now">，建议您立即升级</string>
+    <string name="upgrade_immediately">，请立即升级</string>
+    <string name="start_download">开始下载&#8230;</string>
+    <string name="downloading">正在下载&#8230;</string>
+    <string name="wait_for_download">等待下载&#8230;</string>
+    <string name="wait_for_install">等待安装&#8230;</string>
+    <string name="paused_wait_for_connect">已暂停，等待网络连接&#8230;</string>
+    <string name="paused_wait_for_retry">已暂停，等待重试&#8230;</string>
+    <string name="paused">已暂停</string>
+    <string name="download_failed">下载失败</string>
+    <string name="i_know_download_again">我知道了，重新下载</string>
+    <string name="download_failed_insufficient_space">您的SD卡内存不足，下载失败</string>
+    <string name="download_failed_cannot_resume">下载失败，请不要暂停下载</string>
+    <string name="common_toast_net_null">网络连接异常，请检查网络连接</string>
+    <string name="cancel">取消</string>
+    <string name="background_download">后台下载</string>
+    <string name="is_old_please_upgrade">您正在使用旧版本，无法使用该功能，请立即升级</string>
+</resources>

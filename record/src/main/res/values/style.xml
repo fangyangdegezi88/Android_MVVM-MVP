@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 宽度全屏对话框淡入淡出动画 -->
+    <style name="fadeStyle" parent="android:style/Animation">
+        <item name="@android:windowEnterAnimation">@anim/activity_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/activity_fade_out</item>
+    </style>
+
+    <!--SFDialogWhenLarge宽度全屏样式风格-->
+    <style name="SFDialogWhenLarge" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/fadeStyle</item>
+        <item name="android:windowBackground">@color/no_opacity_30</item>
+        <item name="android:windowFrame">@null</item>  <!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+</resources>
